@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Json</title>
+</head>
+<body>
+    <script>
+const jsondata=`
+{
+    "name":"Lavish",
+    "age":26,
+    "Location":"Pune",
+    "Domain":[
+        "Coding",
+        "web Development"
+    ]
+}
+`;
+const parseddata=JSON.parse(jsondata);
+console.table(parseddata)
+
+
+const Car={
+    comapany:"Maruti Suzuki",
+    model:"New"
+};
+
+// convert json to stringify
+const Carjson=JSON.stringify(Car)
+console.log(Carjson)
+
+//Change object to Array
+//use an array instead of object
+const Bus=["Tata","Ashok","BMW"];
+const busjson=JSON.stringify(Bus);
+console.log(busjson)
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- JSOn is a way of representing data through text 
+JSON.parse()=>
+convert json string into an object
+
+JSON.stringify()=>creates a json string -->
